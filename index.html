@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicación - Google Maps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="contenedor">
+        <section class="tarjeta">
+            <h1>Ubicación</h1>
+
+            <div class="grupo">
+                <label for="nombre">Nombre Ubicación</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Nombre Ubicación"
+                    autocomplete="off"
+                >
+            </div>
+
+            <div class="grupo">
+                <label for="latitud">Latitud</label>
+                <input
+                    type="text"
+                    id="latitud"
+                    placeholder="Ej: -24,7821"
+                    inputmode="decimal"
+                    autocomplete="off"
+                >
+            </div>
+
+            <div class="grupo">
+                <label for="longitud">Longitud</label>
+                <input
+                    type="text"
+                    id="longitud"
+                    placeholder="Ej: -65,4232"
+                    inputmode="decimal"
+                    autocomplete="off"
+                >
+            </div>
+
+            <p id="mensaje" class="mensaje" aria-live="polite"></p>
+
+            <button id="btnAbrir" type="button">Abrir Ubicación</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
